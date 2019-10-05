@@ -1,0 +1,44 @@
+<apex:page standardController="Contact" showHeader="false" sidebar="false">
+    <div id="divtable" />
+    <apex:includeLightning />
+    <apex:includeScript value="/support/console/46.0/integration.js" />
+    <script src="/soap/ajax/38.0/connection.js" type = "text/javascript" >
+    </script>
+    
+    <script>
+    	var Id = "{!$CurrentPage.parameters.id}";
+    	var mode = "{!$CurrentPage.parameters.mode}";    	
+    	
+    	$Lightning.use("c:CCT_EPresentmentPreferencesApp", function() {
+            $Lightning.createComponent("c:CCT_EPresentmentPreferences",{"contactId":Id},"divtable",function(){                
+                 $A.eventService.addHandler({"event":"c:CCT_RedirectToUrl","handler":visualForceFunction});
+            });
+        });
+    </script>
+    
+    <script>
+    	var visualForceFunction = function(event){
+            //alert('called');
+            var recordId = event.getParam("redirectRecId");
+            var SObjectVal = event.getParam("SObject");
+            alert(recordId+'=in page=='+SObjectVal);
+            if(sforce.console.isInConsole()){
+                if(SObjectVal == "Contact"){
+                    sforce.console.getEnclosingTabId(function(result){
+                        var tabId = result.id;
+                        sforce.console.closeTab(tabId);
+                    });
+                    sforce.console.getEnclosingPrimaryTabId(function(result){
+                        var primaryTabId = result.id;
+                        window.open('https://mlc--dev22.lightning.force.com/lightning/cmp/CCT_EPresentmentPreferences');
+                        //window.open(https://mlc--dev22.cs99.my.salesforce.com.lightning.force.com/lightning/cmp/CCT_EPresentmentPreferences);
+                        //sforce.console.openPrimaryTab("",'/'+recordId,true);
+                        sforce.console.openPrimaryTab("",'https://mlc--dev22.lightning.force.com/c/CCT_EPresentmentPreferencesApp.app',true);
+                        //sforce.console.openSubtab(primaryTabId , 'https://mlc--dev22.lightning.force.com/c/CCT_EPresentmentPreferencesApp.app', true, 'salesforce');
+                    });
+                }
+            }
+        }
+    </script>
+  
+</apex:page>
