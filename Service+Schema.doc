@@ -1,0 +1,1324 @@
+Date: Thu, 16 Jul 2020 02:35:13 +0000 (UTC)
+Message-ID: <1657898585.6971.1594866913877@azcwvcdtjirp04-rmi.mfcgd.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6970_854297687.1594866913875"
+
+------=_Part_6970_854297687.1594866913875
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Service Schema</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Service Schema</h1>
+    <div class=3D"Section1">
+        <p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1594866913773 {padding: 0px;}
+div.rbtoc1594866913773 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1594866913773 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1594866913773">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ServiceSchema-ServiceEndpoint">Service Endpoint</a></li>=20
+<li><a href=3D"#ServiceSchema-ApigeeEndpoint">Apigee Endpoint</a></li>=20
+<li><a href=3D"#ServiceSchema-PolicySearchSchema">Policy Search Schema</a>=
+=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ServiceSchema-Queryinputs">Query inputs</a></li>=20
+<li><a href=3D"#ServiceSchema-QueryResponse">Query Response</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ServiceSchema-InquirySearchSchema">Inquiry Search Schema</a=
+>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ServiceSchema-Queryinputs.1">Query inputs</a></li>=20
+<li><a href=3D"#ServiceSchema-QueryResponse.1">Query Response</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ServiceSchema-Statuscodeanddescriptions">Status code and de=
+scriptions</a></li>=20
+</ul>=20
+</div>
+<p></p>
+<h1 id=3D"ServiceSchema-ServiceEndpoint">Service Endpoint</h1>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Environment</th>
+<th class=3D"confluenceTh">Route on PCF</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">DEV</td>
+<td class=3D"confluenceTd"><span style=3D"color: rgb(80,80,80);"><a href=3D=
+"https://gb-cc-history-service-dev.apps.cac.preview.pcf.manulife.com/api/in=
+quiry" class=3D"external-link" rel=3D"nofollow">https://gb-cc-history-servi=
+ce-dev.apps.cac.preview.pcf.manulife.com/api/inquiry</a></span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">PROD</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(80,80,80=
+);"><a href=3D"https://gb-cc-history-service-dev.apps.cac.preview.pcf.manul=
+ife.com/api/inquiry" class=3D"external-link" rel=3D"nofollow">https://gb-cc=
+-history-service.apps.cac.preview.pcf.manulife.com/api/inquiry</a></span></=
+td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">PROD-EXT (DR)</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(80,80,80=
+);"><a href=3D"https://gb-cc-history-service-dev.apps.cac.preview.pcf.manul=
+ife.com/api/inquiry" class=3D"external-link" rel=3D"nofollow">https://gb-cc=
+-history-service.apps.cae.preview.pcf.manulife.com/api/inquiry</a></span></=
+td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"ServiceSchema-ApigeeEndpoint">Apigee Endpoint</h1>
+<p>For the Apigee endpoint, you need to provide the bearer token acquired f=
+rom:<br><span style=3D"color: rgb(80,80,80);"><a href=3D"http://manulife-de=
+velopment-dev.apigee.net/v1/mg/oauth2/token" class=3D"external-link" rel=3D=
+"nofollow">http://manulife-development-dev.apigee.net/v1/mg/oauth2/token</a=
+></span></p>
+<p>You'll need the client id and client secret, which we can email to you s=
+eparately for each region. If you have access to the Apigee dashboard (<a s=
+tyle=3D"text-decoration: none;" class=3D"external-link" rel=3D"nofollow" hr=
+ef=3D"https://manulife.apigee.com/">https://manulife.apigee.com</a>), look =
+for the micro gateway there.</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Environment</th>
+<th colspan=3D"1" class=3D"confluenceTh">Product Name&nbsp;</th>
+<th colspan=3D"1" class=3D"confluenceTh">&nbsp;Application Name</th>
+<th class=3D"confluenceTh">URL</th>
+<th colspan=3D"1" class=3D"confluenceTh">Micro Gateway</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">DEV</td>
+<td colspan=3D"1" class=3D"confluenceTd">CallCentre-History-ca-dev&nbsp;</t=
+d>
+<td colspan=3D"1" class=3D"confluenceTd">manulife-gb-ca-history-dev&nbsp;</=
+td>
+<td class=3D"confluenceTd"><span style=3D"color: rgb(80,80,80);"><a href=3D=
+"https://internal.mesh.dev.api.manulife.com/v1/gb/history/ca/inquiry" class=
+=3D"external-link" rel=3D"nofollow">https://internal.mesh.dev.api.manulife.=
+com/v1/gb/history/ca/inquiry</a></span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(23,43,77=
+);">edgemicro_GB_CallCenter_History_GB-CC-HISTORY-ca-v1-dev</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">PROD</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">PROD-EXT (DR)</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"ServiceSchema-PolicySearchSchema">Policy Search Schema</h1>
+<h2 id=3D"ServiceSchema-Queryinputs">Query inputs</h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Field</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Type</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Examples</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">action</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">policySearch</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Action to determine which funct=
+ionality to call upon.</p><p>policySearch - Search by policy</p><p>inquiryS=
+earch - Search by inquiry</p></td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">planNumber</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">String</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">5678910</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Customer plan number=
+</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">memberId</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">String</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">10</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Customer Member ID</=
+td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">customerType</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">02</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Customer Type:</p><p>01 - PA<br=
+>02 - EE/Family <br>03 - Dental Provider<br>05 - Health Provider<br>10 - Ad=
+visor<br>12 - Third Party Administrator<br>13 - Allianz<br>20 - Other<br>29=
+ - MLI Dept<br>30 - World Care</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">=20
+<div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"borde=
+r-bottom-width: 1px;">=20
+<b class=3D"code-title">Sample query input - policy search</b>=20
+<span class=3D"collapse-source expand-control" style=3D"display:none;"><spa=
+n class=3D"expand-control-icon icon">&nbsp;</span><span class=3D"expand-con=
+trol-text">Expand source</span></span>=20
+<span class=3D"collapse-spinner-wrapper"></span>=20
+</div>=20
+<div class=3D"codeContent panelContent pdl hide-toolbar">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence; collapse: true" data-theme=3D"Confl=
+uence">{
+=09"action": "policySearch",
+=09"planNumber": "5678910",
+=09"memberId": "10",
+=09"customerType": "02"
+}</pre>=20
+</div>=20
+</div>
+<h2 id=3D"ServiceSchema-QueryResponse">Query Response</h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Field</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Type</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Examples</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">createDate</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">dateTime</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><span style=3D"color=
+: rgb(0,51,102);">2019-09-12T00:00:00.000Z</span></td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Created date</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">inquiryKey</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">String</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><p><span style=3D"co=
+lor: rgb(0,51,102);">65414123</span></p></td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Log Number in CSR De=
+sktop</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">customerType</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,51,=
+102);">EE/Family&nbsp;</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Customer Type</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">callCentre</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,51,=
+102);">Waterloo&nbsp;CSC</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Call centre</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">benefitType</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,51,=
+102);">Admin</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Benefit Type</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">subBenefitType</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,51,=
+102);">Booklets/Contracts</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Sub-benefit Type</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">statusCode</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,51,=
+102);">Done</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Status</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">researchCode</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,51,=
+102);">ADJ&nbsp;-&nbsp;SAME&nbsp;DAY&nbsp;-&nbsp;ONLINE</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">Research Code</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">csrPerson</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span style=3D"color: rgb(0,51,=
+102);">Rene&nbsp;Sellier</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd">CSR that attended to the request</=
+td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">sourceCode</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,51,102=
+);">Phone Call</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">Source of the request</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">=20
+<div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"borde=
+r-bottom-width: 1px;">=20
+<b class=3D"code-title">Sample query response - policy search</b>=20
+<span class=3D"collapse-source expand-control" style=3D"display:none;"><spa=
+n class=3D"expand-control-icon icon">&nbsp;</span><span class=3D"expand-con=
+trol-text">Expand source</span></span>=20
+<span class=3D"collapse-spinner-wrapper"></span>=20
+</div>=20
+<div class=3D"codeContent panelContent pdl hide-toolbar">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence; collapse: true" data-theme=3D"Confl=
+uence">{
+    "metaData": [
+        {
+            "name": "createDate"
+        },
+        {
+            "name": "inquiryKey"
+        },
+        {
+            "name": "customerType"
+        },
+        {
+            "name": "callCentre"
+        },
+        {
+            "name": "benefitType"
+        },
+        {
+            "name": "subBenefitType"
+        },
+        {
+            "name": "statusCode"
+        },
+        {
+            "name": "researchCode"
+        },
+        {
+            "name": "csrPerson"
+        },
+        {
+            "name": "sourceCode"
+        }
+    ],
+    "rows": [
+        {
+            "createDate": "04/Jun/2020 10:17 AM",
+            "inquiryKey": "65414204",
+            "customerType": "Other",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "General",
+            "subBenefitType": "General",
+            "statusCode": "Callback/Work in Progress",
+            "researchCode": "WRITE-OFF",
+            "csrPerson": "Somya Rawal",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "03/Jun/2020 10:19 AM",
+            "inquiryKey": "65414185",
+            "customerType": "World Care",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Admin",
+            "subBenefitType": "Booklets/Contracts",
+            "statusCode": "Calgary PAService",
+            "researchCode": "ADJUST",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "28/May/2020 08:01 AM",
+            "inquiryKey": "65414123",
+            "customerType": "EE/Family ",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Admin",
+            "subBenefitType": "Booklets/Contracts",
+            "statusCode": "Done",
+            "researchCode": "ADJ - SAME DAY - ONLINE",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "22/May/2020 11:10 AM",
+            "inquiryKey": "65414033",
+            "customerType": "Health Provider",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "General",
+            "subBenefitType": "General",
+            "statusCode": "Done",
+            "researchCode": "ADJUST",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "22/May/2020 11:09 AM",
+            "inquiryKey": "65414032",
+            "customerType": "Third Party Administrator",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Flex Inquiries",
+            "subBenefitType": "Life Event/New Hire",
+            "statusCode": "Done",
+            "researchCode": null,
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "22/May/2020 11:08 AM",
+            "inquiryKey": "65414031",
+            "customerType": "EE/Family ",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Disability",
+            "subBenefitType": "Flex Review",
+            "statusCode": "Internet Inquiry",
+            "researchCode": "ADMIN ONLY",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "22/May/2020 11:06 AM",
+            "inquiryKey": "65414030",
+            "customerType": "Dental Provider",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Dental",
+            "subBenefitType": "Major",
+            "statusCode": "AA - Canada Only",
+            "researchCode": "ADMIN ONLY",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Mail"
+        },
+        {
+            "createDate": "22/May/2020 11:05 AM",
+            "inquiryKey": "65414029",
+            "customerType": "EE/Family ",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Dental",
+            "subBenefitType": "HCSA/Cost-Plus",
+            "statusCode": "Callback/Work in Progress",
+            "researchCode": "ADJUST",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "22/May/2020 11:03 AM",
+            "inquiryKey": "65414028",
+            "customerType": "Dental Provider",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Admin",
+            "subBenefitType": "Plan Setup",
+            "statusCode": "BUP - ManuConnect",
+            "researchCode": "ADMIN ONLY",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        },
+        {
+            "createDate": "22/May/2020 10:38 AM",
+            "inquiryKey": "65414027",
+            "customerType": "MLI Dept",
+            "callCentre": "Waterloo CSC",
+            "benefitType": "Admin",
+            "subBenefitType": "Claims Suspension",
+            "statusCode": "BUP - Gipsy",
+            "researchCode": "ADJUST",
+            "csrPerson": "Rene Sellier",
+            "sourceCode": "Phone Call"
+        }
+    ]
+}</pre>=20
+</div>=20
+</div>
+<h1 id=3D"ServiceSchema-InquirySearchSchema">Inquiry Search Schema</h1>
+<h2 id=3D"ServiceSchema-Queryinputs.1">Query inputs</h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Field</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Type</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Examples</th>
+<th style=3D"text-align: left;" class=3D"confluenceTh">Description</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">action</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">inquirySearch</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Action to determine which funct=
+ionality to call upon.</p><p>policySearch - Search by policy</p><p>inquiryS=
+earch - Search by inquiry</p></td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">inquiryNumber</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">String</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">65414204</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">The inquiry key that=
+ you can get from the policy search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">=20
+<div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"borde=
+r-bottom-width: 1px;">=20
+<b class=3D"code-title">Sample query input - inquiry search</b>=20
+<span class=3D"collapse-source expand-control" style=3D"display:none;"><spa=
+n class=3D"expand-control-icon icon">&nbsp;</span><span class=3D"expand-con=
+trol-text">Expand source</span></span>=20
+<span class=3D"collapse-spinner-wrapper"></span>=20
+</div>=20
+<div class=3D"codeContent panelContent pdl hide-toolbar">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence; collapse: true" data-theme=3D"Confl=
+uence">{
+=09"action": "inquirySearch",
+=09"inquiryNumber": "65414204"
+}</pre>=20
+</div>=20
+</div>
+<h2 id=3D"ServiceSchema-QueryResponse.1">Query Response</h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 77.=
+51%;">
+<colgroup>
+<col style=3D"width: 9.75%;">
+<col style=3D"width: 21.54%;">
+<col style=3D"width: 12.59%;">
+<col style=3D"width: 26.34%;">
+<col style=3D"width: 29.76%;">
+</colgroup>
+<tbody>
+<tr>
+<th style=3D"width: 69.0px;" class=3D"confluenceTh">Entity</th>
+<th style=3D"width: 116.0px;text-align: left;" class=3D"confluenceTh">Field=
+</th>
+<th style=3D"width: 79.0px;text-align: left;" class=3D"confluenceTh">Type</=
+th>
+<th style=3D"width: 186.0px;text-align: left;" class=3D"confluenceTh">Examp=
+les</th>
+<th colspan=3D"1" class=3D"confluenceTh"><br></th>
+</tr>
+<tr>
+<td style=3D"width: 69.0px;" rowspan=3D"32" class=3D"confluenceTd">General<=
+/td>
+<td style=3D"width: 116.0px;text-align: left;" class=3D"confluenceTd">logNu=
+mber</td>
+<td style=3D"width: 79.0px;text-align: left;" class=3D"confluenceTd">number=
+</td>
+<td style=3D"width: 186.0px;text-align: left;" class=3D"confluenceTd">65408=
+652</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;text-align: left;" class=3D"confluenceTd">conta=
+ctNumber</td>
+<td style=3D"width: 79.0px;text-align: left;" class=3D"confluenceTd">number=
+</td>
+<td style=3D"width: 186.0px;text-align: left;" class=3D"confluenceTd"><p><s=
+pan style=3D"color: rgb(0,51,102);">65414123</span></p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">createDate</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String (<span style=3D"=
+color: rgb(0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>08/Apr/2019 12:08 P=
+M</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">planNumber</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>123</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">division</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>000</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">memberId</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>123</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">IVRSelection</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>Other</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">hotlistCode</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>BLOCK - ALL CALLERS=
+</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">planTerm</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>08/Apr/2030 12:08 P=
+M</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">memberTerm</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">23/Apr/2030 12:08 PM</=
+td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">sourceCode</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">Internal Email</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">callCentre</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">Waterloo CSC</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">customerName</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">JOHN A MACTEST</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">customerType</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">EE/Family</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">customerLanguage</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">English</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">calledFrom</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">123-456-7890</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">benefit</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd">General</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">subBenefit</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">General</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">inquiryType</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Other</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">resolution</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Wrong Number</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">assessment</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Satisfied</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">surveyCode</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Transfer to Senior</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">homePhone</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">123-456-7890</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">businessPhone</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">123-456-7890</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">faxNumber</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">123-456-7890</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">emailAddress</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><a href=3D"mailto:johnamacdonald@f=
+akeemail24.com" class=3D"external-link" rel=3D"nofollow">johnamacdonald@fak=
+eemail24.com</a></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">preferred</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Business Phone</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">callbackBy</td>
+<td colspan=3D"1" class=3D"confluenceTd">String (<span style=3D"color: rgb(=
+0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">09/Apr/2019 12:09 PM</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">researchCode</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">ADJ - SAME DAY - ONLINE</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">seniorCSRPerson</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,51,102=
+);">Rene&nbsp;Sellier</span></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">csrPerson</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Somya Rawal</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">status</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">BUP - Gipsy</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 69.0px;" rowspan=3D"8" class=3D"confluenceTd">Internet<=
+/td>
+<td style=3D"width: 116.0px;text-align: left;" class=3D"confluenceTd">membe=
+rName</td>
+<td style=3D"width: 79.0px;text-align: left;" class=3D"confluenceTd">dateTi=
+me</td>
+<td style=3D"width: 186.0px;text-align: left;" class=3D"confluenceTd">JOHN =
+A MACDONALD</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;text-align: left;" class=3D"confluenceTd">claim=
+SubmitDate</td>
+<td style=3D"width: 79.0px;text-align: left;" class=3D"confluenceTd">String=
+ (<span style=3D"color: rgb(0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td style=3D"width: 186.0px;text-align: left;" class=3D"confluenceTd"><p>01=
+/Sep/2017 02:05 PM</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">claimPaidDate</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String (<span style=3D"=
+color: rgb(0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>09/Apr/2019 12:09 P=
+M</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">claimServiceStartDate<=
+/td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String (<span style=3D"=
+color: rgb(0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>01/Sep/2017 02:05 P=
+M</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">claimPredeterminedEndD=
+ate</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String (<span style=3D"=
+color: rgb(0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>09/Apr/2019 12:09 P=
+M</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">claimPrederteminedAmou=
+nt</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>0</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">requestReceivedDate</t=
+d>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String (<span style=3D"=
+color: rgb(0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>01/Sep/2017 02:05 P=
+M</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td style=3D"width: 116.0px;" class=3D"confluenceTd">clientMessage</td>
+<td style=3D"width: 79.0px;" class=3D"confluenceTd">String</td>
+<td style=3D"width: 186.0px;" class=3D"confluenceTd"><p>Anonymized customer=
+ e-mail message</p></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td rowspan=3D"3" class=3D"confluenceTd">Notes</td>
+<td colspan=3D"1" class=3D"confluenceTd">createDate</td>
+<td colspan=3D"1" class=3D"confluenceTd">String (<span style=3D"color: rgb(=
+0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">05/Jun/2020 01:34 PM</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">csrPerson</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Somya Rawal</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">noteText</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">note test</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td rowspan=3D"4" class=3D"confluenceTd">Emailed Replies</td>
+<td colspan=3D"1" class=3D"confluenceTd">createDate</td>
+<td colspan=3D"1" class=3D"confluenceTd">String (<span style=3D"color: rgb(=
+0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">09/Jun/2020 10:36 AM</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">csrPerson</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Rene Sellier</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">sentTo</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd"><a href=3D"mailto:johnamacdonald@f=
+akeemail.com" class=3D"external-link" rel=3D"nofollow">johnamacdonald@fakee=
+mail.com</a></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">subject</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Manulife Group Benefits Response [=
+INQR]</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td rowspan=3D"7" class=3D"confluenceTd">Log History</td>
+<td colspan=3D"1" class=3D"confluenceTd">fromCSRPerson</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Rene Sellier</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">toCSRPerson</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Somya Rawal</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">changeBy</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Somya Rawal</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">fromStatus</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Callback/Work in Progress</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">toStatus</td>
+<td colspan=3D"1" class=3D"confluenceTd">String</td>
+<td colspan=3D"1" class=3D"confluenceTd">Callback/Work in Progress</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">startDate</td>
+<td colspan=3D"1" class=3D"confluenceTd">String (<span style=3D"color: rgb(=
+0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">04/Jun/2020 02:26 PM</td>
+<td colspan=3D"1" class=3D"confluenceTd">*Time is in UNC Time and salesforc=
+e desktop should convert it to time of desktop&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">endDate</td>
+<td colspan=3D"1" class=3D"confluenceTd">String (<span style=3D"color: rgb(=
+0,51,102);">DD/Mon/YYYY HH:MI AM)</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">04/Jun/2020 02:41 PM</td>
+<td colspan=3D"1" class=3D"confluenceTd">*Time is in UNC Time and salesforc=
+e desktop should convert it to time of desktop&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">=20
+<div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"borde=
+r-bottom-width: 1px;">=20
+<b class=3D"code-title">Samply Query Response - InquirySearch</b>=20
+<span class=3D"collapse-source expand-control" style=3D"display:none;"><spa=
+n class=3D"expand-control-icon icon">&nbsp;</span><span class=3D"expand-con=
+trol-text">Expand source</span></span>=20
+<span class=3D"collapse-spinner-wrapper"></span>=20
+</div>=20
+<div class=3D"codeContent panelContent pdl hide-toolbar">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence; collapse: true" data-theme=3D"Con=
+fluence">{
+    "general": [
+        {
+            "logNumber": 65408652,
+            "contactNumber": 62097710,
+            "createDate": "08/Apr/2019 12:08 PM",
+            "planNumber": "123",
+            "division": "000",
+            "memberId": "123",
+            "IVRSelection": "Other",
+            "hotlistCode": null,
+            "planTerm": null,
+            "memberTerm": null,
+            "sourceCode": "Internal Email",
+            "callCentre": "Waterloo CSC",
+            "customerName": "JOHN A MACTEST",
+            "customerType": "EE/Family ",
+            "customerLanguage": "English",
+            "calledFrom": null,
+            "benefit": "General",
+            "subBenefit": "General",
+            "inquiryType": "Other",
+            "resolution": "Wrong Number",
+            "assessment": "Satisfied",
+            "surveyCode": null,
+            "homePhone": "123-456-7890",
+            "businessPhone": "123-456-7890",
+            "faxNumber": "123-456-7890",
+            "emailAddress": "johnamacdonald@fakeemail24.com",
+            "preferred": null,
+            "callbackBy": "09/Apr/2019 12:09 PM",
+            "researchCode": "ADJ - SAME DAY - ONLINE",
+            "seniorCSRPerson": null,
+            "csrPerson": "Somya Rawal",
+            "status": "BUP - Gipsy"
+        }
+    ],
+    "internet": [
+        {
+            "memberName": "JOHN A MACDONALD",
+            "claimSubmitDate": null,
+            "claimPaidDate": null,
+            "claimServiceStartDate": null,
+            "claimPredeterminedEndDate": null,
+            "claimPrederteminedAmount": null,
+            "requestReceivedDate": "01/Sep/2017 02:05 PM",
+            "clientMessage": "Anonymized customer e-mail message"
+        }
+    ],
+    "notes": [
+        {
+            "createDate": "05/Jun/2020 01:34 PM",
+            "csrPerson": "Somya Rawal",
+            "noteText": "note test"
+        }
+    ],
+    "emailedReplies": [
+        {
+            "createDate": "09/Jun/2020 10:36 AM",
+            "csrPerson": "Rene Sellier",
+            "sentTo": null,
+            "subject": "Manulife Group Benefits Response [INQR]"
+        },
+        {
+            "createDate": "08/Apr/2019 12:08 PM",
+            "csrPerson": "Rene Sellier",
+            "sentTo": "johnamacdonald@fakeemail.com",
+            "subject": "MASKED SUBJECT"
+        }
+    ],
+    "logHistory": [
+        {
+            "fromCSRPerson": null,
+            "toCSRPerson": "Rene Sellier",
+            "changeBy": "Rene Sellier",
+            "fromStatus": null,
+            "toStatus": "Callback/Work in Progress",
+            "startDate": "08/Apr/2019 04:08 PM",
+            "endDate": "08/Apr/2019 04:09 PM"
+        },
+        {
+            "fromCSRPerson": "Rene Sellier",
+            "toCSRPerson": "Somya Rawal",
+            "changeBy": "Somya Rawal",
+            "fromStatus": "Callback/Work in Progress",
+            "toStatus": "Callback/Work in Progress",
+            "startDate": "04/Jun/2020 02:26 PM",
+            "endDate": "04/Jun/2020 02:41 PM"
+        },
+        {
+            "fromCSRPerson": "Somya Rawal",
+            "toCSRPerson": "Somya Rawal",
+            "changeBy": "Somya Rawal",
+            "fromStatus": "Callback/Work in Progress",
+            "toStatus": "BUP - Gipsy",
+            "startDate": "10/Jun/2020 01:31 PM",
+            "endDate": "10/Jun/2020 02:15 PM"
+        }
+    ]
+}</pre>=20
+</div>=20
+</div>
+<p><br></p>
+<p>Postman Collection:</p>
+<p><a href=3D"/download/attachments/258245257/Postman%20Collection.postman_=
+collection.json?version=3D1&amp;modificationDate=3D1593786178017&amp;api=3D=
+v2" data-linked-resource-id=3D"263819757" data-linked-resource-version=3D"1=
+" data-linked-resource-type=3D"attachment" data-linked-resource-default-ali=
+as=3D"Postman Collection.postman_collection.json" data-linked-resource-cont=
+ent-type=3D"application/octet-stream" data-linked-resource-container-id=3D"=
+258245257" data-linked-resource-container-version=3D"23">Postman Collection=
+.postman_collection.json</a></p>
+<h1 id=3D"ServiceSchema-Statuscodeanddescriptions">Status code and descript=
+ions</h1>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 480=
+.0px;">
+<colgroup>
+<col style=3D"width: 0.0px;">
+<col style=3D"width: 0.0px;">
+</colgroup>
+<thead>
+<tr>
+<th style=3D"text-align: left;" class=3D"confluenceTh"><p>Status Code</p></=
+th>
+<th style=3D"text-align: left;" class=3D"confluenceTh"><p>Status Descriptio=
+n</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">200</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">OK</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">400</t=
+d>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">Bad re=
+quest</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">403</t=
+d>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">Forbid=
+den</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">404</t=
+d>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">Page n=
+ot found</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">500</t=
+d>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">Intern=
+al server error</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">503</t=
+d>
+<td style=3D"text-align: left;" colspan=3D"1" class=3D"confluenceTd">Servic=
+e unavailable</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_6970_854297687.1594866913875--
