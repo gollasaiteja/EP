@@ -1,9 +1,12 @@
-<aura:component controller="CCT_GB_DesktopHistoryController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+<aura:component controller="CCT_GB_DesktopHistoryController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" access="global" >
     <aura:attribute name="assetId" access="public" type="Id"/>
     <aura:attribute name="caseRecordId" access="public" type="Id"/>
     <lightning:workspaceAPI aura:id="workspace" />
     <aura:attribute type="List" name="responseRows" access="public" />
     <aura:attribute type="String" name="inquiryResponse" access="public" />
+     <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="pageReference" type="Object"/>
+
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <lightning:card class="slds-text-heading_small slds-card_boundary ">
@@ -71,7 +74,7 @@
             </aura:if> -->
             
             <aura:set attribute="else">
-                {!$Label.c.No_records_to_display}
+                No records to display
             </aura:set>
         </aura:if>
         
