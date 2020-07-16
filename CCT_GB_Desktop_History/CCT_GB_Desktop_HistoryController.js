@@ -36,7 +36,7 @@
     },
     
     handleInquiryClick : function(component, event, helper) {
-       // alert('called');
+        //alert('called');
         var index = event.currentTarget.dataset.rowIndex;
         var workspaceAPI = component.find("workspace");
         //alert(index);
@@ -46,32 +46,64 @@
             var state= response.getState();
             if(state=='SUCCESS'){
                 var returnVal = JSON.parse(response.getReturnValue());                       
-                alert(JSON.stringify(returnVal));
+                //alert(JSON.stringify(returnVal));
                 component.set("v.inquiryResponse",JSON.stringify(returnVal));
                 
-                var evt = $A.get("e.force:navigateToComponent");
-                //alert('Event>> '+evt);                
-                evt.setParams({
-                    componentDef : "c:CCT_GB_InquirySearchResult",
-                    componentAttributes: {
-                        InquirySearchResult : JSON.parse(component.get("v.inquiryResponse"))                        
-                    }
-                });
-                evt.fire();               
                 
-              
-               /* workspaceAPI.getEnclosingTabId().then(function(enclosedTabId){
-                    alert('enclosed tab'+enclosedTabId);
-                    workspaceAPI.openSubtab({
-                        parentTabId : enclosedTabId,
-                        url : '/lightning/r/Asset/' + index + '/view',
-                        focus : true
-                    }).then(function(subTabId){
-                        alert('sub tab id'+subTabId);
-                    }).catch(function(error){
-                        alert('error');
-                    });
-                });*/
+                
+                var navService = component.find("navService");
+                alert('4'+component.get("v.inquiryResponse"));
+                
+                // set the pageReference object used to navigate to the component. Include any parameters in the state key.
+                var pageReference = {
+                    type: "standard__component",
+                    attributes: {
+                        componentName: "c__CCT_GB_InquirySearchResult"
+                    },
+                    state: {
+                        "c__InquirySearchResult": component.get("v.inquiryResponse")
+                    }
+                };
+                
+                // handles checking for console and standard navigation and then navigating to the component appropriately
+                workspaceAPI
+                .isConsoleNavigation()
+                .then(function(isConsole) {
+                    if (isConsole) {
+                        //  // in a console app - generate a URL and then open a subtab of the currently focused parent tab
+                        navService.generateUrl(pageReference).then(function(cmpURL) {
+                            alert(cmpURL);
+                            workspaceAPI
+                            .getEnclosingTabId()
+                            .then(function(tabId) {
+                                return workspaceAPI.openSubtab({
+                                    parentTabId: tabId,
+                                    url: cmpURL,
+                                    focus: true
+                                });
+                            })
+                            .then(function(subTabId) {
+                                // the subtab has been created, use the Id to set the label
+                                workspaceAPI.setTabLabel({
+                                    tabId: subTabId,
+                                    label: "SubTab Label"
+                                });
+                                workspaceAPI.setTabIcon({
+                                    tabId: subtabId, 
+                                    icon: "standard:knowledge",
+                                    iconAlt: "SubTab Label Name"
+                                });
+                                
+                            });
+                        });
+                    } else {
+                        // this is standard navigation, use the navigate method to open the component
+                        navService.navigate(pageReference, false);
+                    }
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
             }
         });
         $A.enqueueAction(inquirySearchMethod);
