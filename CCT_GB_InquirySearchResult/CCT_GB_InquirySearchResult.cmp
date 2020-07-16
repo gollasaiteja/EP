@@ -1,0 +1,38 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute type="String" name="InquirySearchResult" access="public" />
+    <aura:attribute type="List" name="generalResult" access="public" />
+    <aura:attribute type="List" name="internetResult" access="public"/>
+    <aura:attribute type="List" name="notesResult" access="public"/>
+    <aura:attribute type="List" name="emailRepliesResult" access="public"/>
+    <aura:attribute type="List" name="logHistoryResult" access="public"/>
+    <!--<ltng:require styles="/resources/slds/" />-->
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div>
+        <lightning:accordion>
+            <div class="slds-form-element">
+                <lightning:accordionSection name="general" label="General">
+                    <aura:iteration items="{!v.generalResult}" var="gen">                    
+                        <label class="slds-form-element__label"> Log Number </label>
+                        <lightning:formattedNumber value="{!gen.logNumber}" />                        
+                    </aura:iteration>
+                </lightning:accordionSection>
+                
+            </div>
+        </lightning:accordion>
+        
+        <lightning:accordion>
+            <div class="slds-grid">                
+                <lightning:accordionSection name="internet" label="Internet">
+                    <aura:iteration items="{!v.internetResult}" var="internetRes"> 
+                        {!internetRes.memberName}--
+                        <lightning:formattedText label="{!internetRes.memberName}" value="{!internetRes.memberName}" />
+                    </aura:iteration>
+                </lightning:accordionSection>
+                
+            </div>
+        </lightning:accordion>
+         
+    </div>
+</aura:component>

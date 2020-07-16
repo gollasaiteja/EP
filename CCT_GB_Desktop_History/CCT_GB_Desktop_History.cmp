@@ -1,0 +1,79 @@
+<aura:component controller="CCT_GB_DesktopHistoryController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="assetId" access="public" type="Id"/>
+    <aura:attribute name="caseRecordId" access="public" type="Id"/>
+    <lightning:workspaceAPI aura:id="workspace" />
+    <aura:attribute type="List" name="responseRows" access="public" />
+    <aura:attribute type="String" name="inquiryResponse" access="public" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:card class="slds-text-heading_small slds-card_boundary ">
+        <header class="slds-card__header slds-grid ">
+            <div class="slds-media slds-media_center slds-has-flexi-truncate" >
+                <div class="slds-media__figure">
+                    <lightning:icon class="slds-icon_container" iconName="standard:case" /> 
+                </div>
+                <div class="slds-media__body slds-truncate" >
+                    <h2 style="font-weight: 700" >
+                        <span class="slds-text-heading_small">
+                            <span > Desktop History </span>
+                        </span>
+                    </h2>                    
+                </div>
+                <lightning:button variant="brand" label="Search" title="Search" onclick="{!c.handleButtonClick}"/>                  
+            </div>            
+        </header>
+        
+        <aura:if   isTrue="{!not(empty(v.responseRows))}"> 
+            <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+                <thead>
+                    <tr class="slds-text-heading_label">
+                        <th scope="col"><div class="slds-truncate" title="Inquiry Key">Inquiry Key</div></th>
+                        <th scope="col"><div class="slds-truncate" title="Customer Typ">Customer Type</div></th>
+                        <th scope="col"><div class="slds-truncate" title="Benefit Typ">Benefit Type</div></th>
+                        <th scope="col"><div class="slds-truncate" title="Benefit Subtype">Benefit Subtype</div></th>
+                         <!--<th scope="col"><div class="slds-truncate" title="Call Centre">Call Centre</div></th> -->
+                        <th scope="col"><div class="slds-truncate" title="Status Code">Status Code</div></th> 
+                        <th scope="col"><div class="slds-truncate" title="Research Code">Research Code</div></th> 
+                        <th scope="col"><div class="slds-truncate" title="CSR Person">CSR Person</div></th>
+                       <!-- <th scope="col"><div class="slds-truncate" title="Source Code">Source Code</div></th> -->
+                        <th scope="col"><div class="slds-truncate" title="Create Date">Create Date</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Use the Apex model and controller to fetch server side data -->
+                    <aura:iteration items="{!v.responseRows}" var="eachRow" >
+                        <tr>
+                            <th scope="row">
+                                <div class="slds-truncate"  title="{!eachRow.inquiryKey}">
+                                    <a data-row-index="{!eachRow.inquiryKey}" onclick="{!c.handleInquiryClick}">{!eachRow.inquiryKey}</a>
+                                </div>
+                            </th>
+                            <td><div class="slds-truncate" title="{!eachRow.customerType}">{!eachRow.customerType}</div></td>                            
+                            <td><div class="slds-truncate" title="{!eachRow.benefitType}">{!eachRow.benefitType}</div></td>
+                            <td><div class="slds-truncate" title="{!eachRow.subBenefitType}">{!eachRow.subBenefitType}</div></td>
+                          <!--  <td><div class="slds-truncate" title="{!eachRow.callCentre}">{!eachRow.callCentre}</div></td> -->
+                            <td><div class="slds-truncate" title="{!eachRow.statusCode}">{!eachRow.statusCode}</div></td>
+                            <td><div class="slds-truncate" title="{!eachRow.researchCode}">{!eachRow.researchCode}</div></td>
+                            <td><div class="slds-truncate" title="{!eachRow.csrPerson}">{!eachRow.csrPerson}</div></td>
+                            <td><div class="slds-truncate" title="{!eachRow.createDate}">{!eachRow.createDate}</div></td> 
+                            
+                            <!--<td><div><lightning:formattedDateTime value="{!eachRow.createDate}" format="yyyy-mm-dd">
+</lightning:formattedDateTime></div></td>-->
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+            
+      <!--      <aura:if isTrue="{!not(empty(v.responseRows))}">
+                <div style="height: 30px;">
+                    <a onclick="{!c.handleGotoRelatedList}">View All</a>
+                </div>
+            </aura:if> -->
+            
+            <aura:set attribute="else">
+                {!$Label.c.No_records_to_display}
+            </aura:set>
+        </aura:if>
+        
+    </lightning:card>
+</aura:component>
